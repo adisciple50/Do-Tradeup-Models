@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "Models/version"
+require "Models/version"
 
 module Tradeup
   module Database

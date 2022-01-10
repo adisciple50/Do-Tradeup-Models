@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "lib/Tradeup/Database/Models/version"
+require "./lib/Tradeup/Database/Models/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "Do-Tradeup-Models"
-  spec.version       = Do::Tradeup::Models::VERSION
+  spec.version       = Tradeup::Database::Models::VERSION
   spec.authors       = ["Jason Crockett"]
   spec.email         = ["talktotradeup@outlook.com"]
 
   spec.summary       = "Mongoid Models for the arbitrage site tradeup.info"
   spec.description   = "These mongoid Models our open source for anyone to use"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/adisciple50/Do-Tradeup-Models"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
+  # spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = spec.homepage
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -34,4 +34,5 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
+  # spec.add_dependency 'mongoid'
 end

@@ -25,7 +25,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir.children(Dir.pwd) # adds everything in root at least.
   end
-  spec.files = spec.files.delete('.idea') + ['lib/Tradeup/Database/Models.rb']
+  spec.files = spec.files.delete('.idea')
+  spec.files = spec.files + ['lib/Tradeup/Database/Models.rb']
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
@@ -35,5 +36,5 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
-  spec.add_dependency 'mongoid'
+  spec.add_dependency 'mongoid','~> 7.0'
 end

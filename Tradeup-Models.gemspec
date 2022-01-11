@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir.children(Dir.pwd) # adds everything in root at least.
   end
-  spec.files = spec.files.delete('.idea')
+  spec.files = spec.files.delete('.idea') + ['lib/Tradeup/Database/Models.rb']
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

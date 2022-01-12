@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require "Models/version"
 require 'mongoid'
+require "Tradeup/Database/Models/version"
 
 module Tradeup
   module Database
